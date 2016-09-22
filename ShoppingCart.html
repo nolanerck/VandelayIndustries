@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+
+<h2>Shopping Cart for Vanedlay Industries</h2>
+
+<table>
+	<thead>
+    	<tr>
+        	<th>Qty</th>
+            <th>Product</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+    	<cfloop query="qryShoppingCart">
+	    	<tr>
+            	<td>#qryShoppingCart.qty#</td>
+                <td>#qryShoppingCart.product#</td>
+                <td>#qryShoppingCart.price#</td>
+    	    </tr>
+        </cfloop>
+    </tbody>
+</table>
+
+
+</body>
+</html>
