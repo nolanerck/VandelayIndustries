@@ -22,13 +22,11 @@
 
 <cfset pathToRepo = makebashFriendlyPath( expandPath( "../" ) ) />
 
-<cfset homeDirectory = "/c/Users/Administrator" />
+<cfset homeDirectory = "/c/Users/nolan" />
 
 <cfset gitArguments = '-c "HOME=#homeDirectory#;cd #pathToRepo#;git pull origin 2>&1;"' />
 
-<!---<cfexecute name="#strPathToGitBinary#" arguments="#gitArguments#" timeout="120" variable="rsltGitCommand" />--->
-
-<cfexecute name="#strPathToGitBinary#" arguments="pull origin" timeout="120" variable="rsltGitCommand" />
+<cfexecute name="#strPathToGitBinary#" arguments="#gitArguments#" timeout="120" variable="rsltGitCommand" />
 
 <cfoutput>
 	strPathToGitBinary: #strPathToGitBinary#<br />
