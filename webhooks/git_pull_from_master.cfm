@@ -10,12 +10,12 @@
 <cfswitch expression="#cgi.server_name#">
 	
 	<cfcase value="metrofamilylaunchpad.dev">
-		<cfset strPathToGitBinary = "C:\Program Files (x86)\Git\bin\git.exe" />
+		<cfset strPathToGitBinary = "C:\Program Files (x86)\Git\bin\sh.exe" />
 	</cfcase>
 	
 	<!--- Dev1,Prod1 and Prod2 servers. TODO: get actual values for cgi.server_name for these boxes --->
 	<cfdefaultcase>
-        <cfset strPathToGitBinary = "C:\Program Files\Git\bin\git.exe" />		
+        <cfset strPathToGitBinary = "C:\Program Files\Git\bin\sh.exe" />		
 	</cfdefaultcase>
 	
 </cfswitch>
