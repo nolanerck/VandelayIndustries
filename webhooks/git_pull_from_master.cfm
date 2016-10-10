@@ -26,8 +26,17 @@
 
 <cfset gitArguments = '-c "HOME=#homeDirectory#;cd #pathToRepo#;git pull origin 2>&1;"' />
 
-<cfexecute name="#strPathToGitBinary#" arguments="#gitArguments#" timeout="120" variable="rsltGitCommand" />
+<!---<cfexecute name="#strPathToGitBinary#" arguments="#gitArguments#" timeout="120" variable="rsltGitCommand" />--->
 
+<cfexecute name="#strPathToGitBinary#" arguments="pull origin" timeout="120" variable="rsltGitCommand" />
+
+<cfoutput>
+	strPathToGitBinary: #strPathToGitBinary#<br />
+	pathToRepo: #pathToRepo#<br />
+	
+	homeDirectory: #homeDirectory# <br />
+	gitArguments: #gitArguments#<br />
+</cfoutput>
 <cfdump var="#rsltGitCommand#" />
 
 
