@@ -4,8 +4,8 @@
             Syncs file from a source folder to a destination folder
     </description>
 
-	<property name="destination" location="./destination_dir" />
-	<property name="source" location="./source_dir" />
+	<property name="destination" location="./" />
+	<property name="source" location="./" />
     <!-- ================================= 
           target: default              
          ================================= -->
@@ -24,9 +24,6 @@
 		<exclude name="build.xml"/>
 		<exclude name="**/tests/"/>
 	</fileset>
-    	  <preserveintarget>
-    	     <include name="**/images/**"/>
-    	  </preserveintarget>
     	</sync>
 
     	
