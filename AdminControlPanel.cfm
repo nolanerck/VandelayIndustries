@@ -12,7 +12,7 @@ the new feature we're adding to the app
 
 <button>Preview Shopping Carts</button>
 <button>Editing Customer Records</button>
-
+<button>Delete Records</button>
 
 </body>
 </html>
