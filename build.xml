@@ -9,7 +9,7 @@
     <!-- ================================= 
           target: default              
          ================================= -->
-    <target name="default" description="main entry point">
+    <target name="default" depends="syncfiles" description="main entry point">
         <echo>Finished Synching files!</echo>
 	<echo>SOURCE: ${source}</echo>
 	<echo>DESTINATION: ${destination}</echo>
